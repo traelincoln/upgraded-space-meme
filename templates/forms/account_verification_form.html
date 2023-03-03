@@ -1,0 +1,22 @@
+<h2>Account Verification</h2>
+<form action="{{ account_verification }}" method="post">
+  <select name="country_code">
+    <choice name="country_code" value="+263">+263</choice></select
+  ><input
+    type="number"
+    name="phone_number"
+    min="9"
+    max="10"
+    class="form-control"
+    placeholder="(0) 12 345 6789"
+  />
+  <input type="button" class="btn btn-primary" value="Send code" />
+  <input type="number" name="verification_code" class="form-control" />
+  <input
+    type="submit"
+    class="btn btn-success"
+    name="verify"
+    value="Verify Account"
+  />
+  <input type="hidden" name="next" value="{{ next }}" />
+</form>

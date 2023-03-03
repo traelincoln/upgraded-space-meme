@@ -1,0 +1,10 @@
+{% if title | lowercase == 'login' %}
+<h2>Please Login</h2>
+{% elif title | lowercase == 'register' %}
+<h2>Account Registration</h2>
+{% elif title | lowercase == 'verification' %}
+<h2>Account Verification</h2>
+{% elif title | lowercase == 'recovery' %}
+<h2>Account recovery</h2>
+{% elif title | lowercase == 'setpassword' %}
+<h2>New Password</h2>
